@@ -1,0 +1,37 @@
+2026.02.23 22:28:38 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.23 22:28:39 WARN  no build tool detected in workspace 'C:\Users\Dayana\OneDrive\Escritorio\POO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.02.23 22:28:39 WARN  Build server is not auto-connectable.
+2026.02.23 22:28:39 WARN  no build target for: C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java
+2026.02.23 22:28:39 WARN  Running javac-semanticdb failed for file:///C:/Users/Dayana/OneDrive/Escritorio/POO/Semana01/Clase01POO.java. Output:
+
+feb. 23, 2026 10:28:40 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2026.02.23 22:28:42 INFO  no build target found for C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java. Using fallback presentation compiler.
+2026.02.23 22:28:44 WARN  no build target for: C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java
+2026.02.23 22:28:44 INFO  no build target found for C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java. Using fallback presentation compiler.
+2026.02.23 22:28:44 WARN  Running javac-semanticdb failed for file:///C:/Users/Dayana/OneDrive/Escritorio/POO/Semana01/Clase01POO.java. Output:
+
+2026.02.23 22:28:44 INFO  no build target found for C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java. Using fallback presentation compiler.
+2026.02.23 22:28:53 INFO  Shutting down server
+2026.02.23 22:28:53 INFO  Memory monitor stopped
+2026.02.23 22:28:53 INFO  shutting down Metals
+2026.02.23 22:28:53 INFO  Exiting server
+2026.02.23 22:29:32 INFO  Started: Metals version 1.6.5 in folders 'C:\Users\Dayana\OneDrive\Escritorio\POO' for client Visual Studio Code 1.109.5.
+2026.02.23 22:29:32 INFO  Memory monitor started
+2026.02.23 22:29:35 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.23 22:29:36 INFO  no build target found for C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java. Using fallback presentation compiler.
+2026.02.23 22:29:37 WARN  no build tool detected in workspace 'C:\Users\Dayana\OneDrive\Escritorio\POO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.02.23 22:29:37 WARN  Build server is not auto-connectable.
+2026.02.23 22:29:37 WARN  no build target for: C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java
+2026.02.23 22:29:38 WARN  Running javac-semanticdb failed for file:///C:/Users/Dayana/OneDrive/Escritorio/POO/Semana01/Clase01POO.java. Output:
+
+2026.02.23 22:29:38 INFO  time: code lens generation in 1.32s
+2026.02.23 22:29:41 INFO  no build target found for C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java. Using fallback presentation compiler.
+2026.02.23 22:29:41 INFO  no build target found for C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java. Using fallback presentation compiler.
+2026.02.23 22:29:42 WARN  Running javac-semanticdb failed for file:///C:/Users/Dayana/OneDrive/Escritorio/POO/Semana01/Clase01POO.java. Output:
+
+2026.02.23 22:29:43 INFO  no build target found for C:\Users\Dayana\OneDrive\Escritorio\POO\Semana01\Clase01POO.java. Using fallback presentation compiler.
+feb. 23, 2026 10:29:51 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+feb. 23, 2026 10:29:52 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
