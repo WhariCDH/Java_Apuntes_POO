@@ -1,0 +1,74 @@
+✅ ¿Qué es un constructor?
+
+Es un método especial que:
+
+-Se ejecuta cuando creas un objeto (new)
+
+-Sirve para inicializar atributos
+
+✔️ Características:
+
+-❌ No tiene tipo (void, int, etc.)
+
+-✅ Tiene el mismo nombre de la clase
+
+-✅ Se ejecuta automáticamente
+
+🧱 TIPOS DE CONSTRUCTORES
+*******************************************
+1. 🔹 Constructor vacío
+
+Empleado() {
+}
+
+👉 No hace nada
+👉 Luego usas set
+
+✔️ Ejemplo:
+
+Empleado e = new Empleado();
+e.setNombre("Juan");
+*********************************************
+2. 🔹 Constructor por defecto
+
+Empleado() {
+    this.nombre = "Carlos";
+    this.sueldo = 3000;
+}
+
+👉 Asigna valores automáticamente
+
+✔️ No necesitas set
+**********************************************
+3. 🔹 Constructor con parámetros
+Empleado(String nombre, double sueldo) {
+    this.nombre = nombre;
+    this.sueldo = sueldo;
+}
+
+👉 Recibe datos al crear el objeto
+
+✔️ Ejemplo:
+
+Empleado e = new Empleado("Luis", 2500);
+
+************************************************
+🔥 SOBRECARGA (LO MÁS IMPORTANTE)
+✅ ¿Qué es?
+
+Tener varios métodos o constructores con el mismo nombre, pero diferentes parámetros.
+
+✔️ Ejemplo claro:
+public class Empleado {
+
+    // Constructor vacío
+    Empleado() {}
+
+    // Constructor 1 parámetro
+    Empleado(String nombre) {}
+
+    // Constructor 2 parámetros
+    Empleado(String nombre, double sueldo) {}
+}
+
+👉 Todos se llaman igual, pero son diferentes
