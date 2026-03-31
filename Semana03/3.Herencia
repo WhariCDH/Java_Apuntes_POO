@@ -1,0 +1,118 @@
+1️⃣ ¿Qué es la herencia?
+
+Es un mecanismo de Programación Orientada a Objetos que permite crear una clase nueva a partir de otra ya existente.
+
+La nueva clase hereda atributos y métodos de la clase original.
+
+Ejemplo simple:
+
+class Animal {
+    void comer() {
+        System.out.println("El animal come");
+    }
+}
+
+class Perro extends Animal {
+}
+
+Aquí:
+
+Animal → Superclase (padre)
+
+Perro → Subclase (hijo)
+
+2️⃣ Palabra clave extends
+
+Se usa para indicar que una clase hereda de otra.
+
+class Hijo extends Padre
+
+Ejemplo:
+
+class Estudiante extends Persona
+3️⃣ Jerarquía de clases
+
+Las clases se organizan como árbol familiar.
+
+Ejemplo:
+
+PUBLICACION
+   |
+   ├── LIBRO
+   │      └── LIBRO_TEXTO
+   |
+   └── REVISTA
+          └── MAGAZINE
+
+Clase principal → clase raíz.
+
+4️⃣ Terminología importante
+Concepto	Significado
+Superclase	Clase padre
+Subclase	Clase hija
+Descendiente	Clase que hereda
+Ascendiente	Clase base
+
+Ejemplo:
+
+class B extends A
+
+A → superclase
+
+B → subclase
+
+5️⃣ super
+
+super permite acceder a atributos o métodos de la clase padre.
+
+Ejemplo:
+
+class Persona {
+    String nombre;
+
+    Persona(String nombre){
+        this.nombre = nombre;
+    }
+}
+
+class Estudiante extends Persona {
+
+    Estudiante(String nombre){
+        super(nombre);
+    }
+}
+
+super(nombre) llama al constructor del padre.
+
+⚠ Debe ser la primera línea del constructor.
+
+6️⃣ Modificadores de acceso
+Modificador	Acceso
+private	solo en la clase
+public	todas las clases
+protected	paquete + subclases
+(default)	solo paquete
+
+Importante:
+
+❌ Las subclases NO pueden acceder a private
+✔ Para herencia se usa protected
+
+7️⃣ Tipos de herencia
+🔹 Herencia simple
+
+Una clase hereda de una sola clase.
+
+class B extends A
+
+✔ Java usa solo este tipo.
+
+🔹 Herencia múltiple
+
+Una clase hereda de varias clases.
+
+class C : public A, public B
+
+❌ Java NO lo permite.
+
+Se reemplaza con interfaces.

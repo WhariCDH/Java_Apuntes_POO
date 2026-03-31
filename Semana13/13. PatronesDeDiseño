@@ -1,0 +1,75 @@
+# 📌 PATRONES DE DISEÑO (MVC – DAO – DTO)
+***********************************************************************************
+## ✅ ¿Qué son los Patrones de Diseño?
+
+Un patrón de diseño es una **forma organizada y probada de estructurar un programa** para resolver problemas comunes en el desarrollo de software.
+
+Beneficios:
+
+* Código más ordenado y legible
+* Fácil mantenimiento
+* Reutilización de código
+* Mayor escalabilidad del sistema
+
+---
+*************************************************************************************
+## ✅ Patrón MVC (Modelo – Vista – Controlador)
+
+Permite dividir la aplicación en **3 capas principales:**
+
+### 🔹 Modelo
+
+* Contiene los datos y la lógica del negocio.
+* Es independiente de la interfaz gráfica.
+* Ejemplo: Clase Cliente, Producto, Venta.
+
+### 🔹 Vista
+
+* Es la interfaz que ve el usuario.
+* Puede ser Swing, Web, App móvil.
+* Muestra la información del modelo.
+
+### 🔹 Controlador
+
+* Recibe los eventos de la vista (click botones, teclado, etc.)
+* Procesa la información y llama al modelo o DAO.
+
+---
+********************************************************************************************
+## ✅ Patrón DAO (Data Access Object)
+
+Se encarga de **manejar el acceso a la Base de Datos.**
+
+Funciones principales:
+
+* Insertar datos (INSERT)
+* Consultar datos (SELECT)
+* Actualizar datos (UPDATE)
+* Eliminar datos (DELETE)
+
+Ventajas:
+
+* Separa la lógica del negocio de la lógica de Base de Datos.
+* Permite cambiar fácilmente de MySQL a Oracle u otra BD.
+* Hace el sistema más organizado y mantenible.
+
+---
+*********************************************************************************************
+## ✅ Patrón DTO (Data Transfer Object)
+
+Es una clase simple que contiene solo **atributos + getters + setters.**
+
+Objetivo:
+
+* Transportar datos entre capas del sistema.
+* Puede unir datos de varias tablas en un solo objeto.
+* Reduce llamadas innecesarias a la Base de Datos.
+
+Ejemplo:
+
+Un DTO puede contener:
+
+* Datos del Cliente
+* Datos de su Dirección
+
+Todo en un solo objeto.

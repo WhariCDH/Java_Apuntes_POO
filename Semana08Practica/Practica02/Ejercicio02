@@ -1,0 +1,127 @@
+⭐ EJERCICIO — SISTEMA DE VEHÍCULOS
+
+***********************************************************
+
+✅ 1) Construya una interfaz llamada TarifasVehiculo
+
+Debe contener:
+
+peajeAuto = 8
+
+peajeCamion = 15
+
+peajeMoto = 4
+
+seguroBase = 120
+
+impuestoAuto = 0.05
+
+impuestoCamion = 0.08
+
+impuestoMoto = 0.03
+
+************************************************************
+
+✅ 2) Construya una clase ABSTRACTA Vehiculo
+
+Atributos:
+
+placa
+
+marca
+
+anioFabricacion
+
+Debe tener:
+
+✔ Constructor
+✔ Getters y setters
+
+Métodos abstractos:
+
+calcularPeaje()
+calcularSeguro()
+calcularImpuesto()
+
+Método NORMAL:
+
+costoTotal = peaje + seguro + impuesto
+
+***************************************************************
+
+✅ 3) Clase Auto
+
+Atributo adicional:
+
+numeroPuertas
+
+Reglas:
+
+✔ Peaje → constante peajeAuto
+
+✔ Seguro:
+
+si anioFabricacion < 2015 → seguroBase + 50
+
+sino → seguroBase
+
+✔ Impuesto:
+
+5% del seguro
+
+*******************************************************************
+
+✅ 4) Clase Camion
+
+Atributo adicional:
+
+toneladasCarga
+
+Reglas:
+
+✔ Peaje → peajeCamion
+
+✔ Seguro:
+
+seguroBase + (toneladasCarga * 20)
+
+✔ Impuesto:
+
+8% del seguro
+
+********************************************************************
+
+✅ 5) Clase Moto
+
+Atributo adicional:
+
+cilindrada
+
+Reglas:
+
+✔ Peaje → peajeMoto
+
+✔ Seguro:
+
+si cilindrada > 250 → seguroBase + 30
+
+sino → seguroBase
+
+✔ Impuesto:
+
+3% del seguro
+
+*******************************************************************
+
+✅ 6) Construya MainVehiculo
+
+Menú:
+
+1 Registrar Auto
+2 Registrar Camion
+3 Registrar Moto
+4 Salir
+
+Debe mostrar:
+
+⭐ Costo total del vehículo

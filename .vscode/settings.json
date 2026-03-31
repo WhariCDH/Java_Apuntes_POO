@@ -1,0 +1,11 @@
+{
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\Dayana\\Downloads\\mysql-connector-j-9.6.0\\mysql-connector-j-9.6.0\\mysql-connector-j-9.6.0.jar"
+    ]
+}

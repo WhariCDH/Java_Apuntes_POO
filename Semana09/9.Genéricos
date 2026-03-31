@@ -1,0 +1,123 @@
+📌 SEMANA 9 — GENÉRICOS EN JAVA
+************************************************************
+⭐ ¿Qué son los Genéricos?
+
+Los genéricos permiten crear clases, interfaces y métodos que trabajan con cualquier 
+tipo de dato, usando tipos parametrizados.
+
+Se usan los operadores:
+
+<T>
+
+Ejemplo:
+
+class Caja<T> {
+    private T dato;
+
+    public void guardar(T dato){
+        this.dato = dato;
+    }
+
+    public T obtener(){
+        return dato;
+    }
+}
+
+Aquí T puede ser:
+
+String
+
+Integer
+
+Double
+
+Objetos propios
+***************************************************************
+⭐ Nombres convencionales de tipos genéricos
+
+T → Tipo general
+
+E → Elemento (colecciones)
+
+K → Clave
+
+V → Valor
+
+N → Número
+
+S, U, V → Segundo o tercer tipo
+
+Ejemplo:
+
+class Par<K,V>{
+    K clave;
+    V valor;
+}
+***************************************************************
+⭐ Beneficios de los Genéricos
+
+✅ Mayor seguridad de tipos (error en compilación, no en ejecución)
+
+✅ Evita casting
+
+ANTES:
+
+Object obj = lista.get(0);
+String s = (String)obj;
+
+CON GENÉRICOS:
+
+String s = lista.get(0);
+
+✅ Código reutilizable
+
+Se pueden crear algoritmos genéricos.
+***************************************************************
+⭐ Uso común
+ArrayList<String> lista = new ArrayList<>();
+ArrayList<Integer> numeros = new ArrayList<>();
+
+Aquí ArrayList es una clase genérica.
+***************************************************************
+⭐ Métodos Genéricos
+public static <T> void mostrar(T dato){
+    System.out.println(dato);
+}
+****************************************************************
+⭐ Limitaciones de los Genéricos
+
+❌ No se puede crear:
+
+new T();
+
+❌ No se puede:
+
+new T[10];
+
+❌ No se puede usar:
+
+if(obj instanceof T)
+
+❌ No pueden existir atributos static genéricos:
+
+static T dato;
+
+❌ No se pueden crear excepciones genéricas:
+
+class MiError<T> extends Exception {}
+
+❌ No se pueden usar en enums:
+
+enum Tipo<T> {}
+
+❌ Aunque B herede de A:
+
+ArrayList<B> NO hereda de ArrayList<A>
+*****************************************************************
+⭐ Idea clave para examen
+
+Genéricos =
+👉 reutilización
+👉 seguridad de tipos
+👉 menos casting
+👉 programación flexible

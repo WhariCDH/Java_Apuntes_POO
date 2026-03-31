@@ -1,0 +1,127 @@
+🔵 ¿Qué es una clase abstracta?
+
+Es una clase que:
+
+✅ NO se puede crear objetos
+✅ Sirve como base (padre) para otras clases
+✅ Puede tener métodos SIN código
+
+🎯 Ejemplo mental
+
+Antes tú tenías:
+
+Figura f = new Figura(); ❌
+
+Si Figura es abstracta → eso NO se puede.
+
+Porque:
+
+Figura no es una figura real
+Cuadrado sí
+Rectángulo sí
+Triángulo sí
+⭐ ¿Para qué sirve?
+
+Para obligar a las subclases a implementar métodos.
+
+Esto es MUY poderoso.
+
+🎯 Ejemplo típico
+public abstract class Figura {
+
+    public abstract double calcularArea();
+
+}
+
+Aquí Java dice:
+
+Toda figura debe saber calcular su área
+
+Pero no sabe cómo.
+
+Entonces las hijas lo hacen.
+
+🟢 Subclase
+public class Cuadrado extends Figura {
+
+    public double calcularArea() {
+        return lado * lado;
+    }
+}
+⭐ Método abstracto
+
+Es un método que:
+
+✅ Solo se declara
+❌ No tiene {}
+❌ No tiene return
+
+✔ Correcto
+public abstract double calcularArea();
+❌ Incorrecto
+public abstract double calcularArea() {
+   return 0;
+}
+⭐ Reglas IMPORTANTES
+✅ Si una clase tiene UN método abstracto
+
+→ La clase DEBE ser abstracta
+
+✅ Las clases abstractas pueden tener:
+
+✔ métodos normales
+✔ variables
+✔ constructores
+
+🎯 Ejemplo completo
+public abstract class Propiedad {
+
+    protected double precio;
+
+    public Propiedad(double precio) {
+        this.precio = precio;
+    }
+
+    public abstract double calcularComision();
+
+    public double total() {
+        return precio * 1.10;
+    }
+}
+🔥 Esto permite POLIMORFISMO REAL
+Propiedad p = new Casa(50000);
+System.out.println(p.calcularComision());
+
+Java decide qué método usar.
+
+⭐ Diferencia con clase normal (MUY EXAMEN)
+Clase normal	Clase abstracta
+Se puede crear objeto	❌ NO
+Puede tener métodos abstractos	❌ NO
+Se usa como modelo	✅
+🧠 IDEA PROFUNDA
+
+Clase abstracta = contrato
+
+Dice:
+
+Toda subclase debe implementar esto
+⭐ CUÁNDO USARLAS (nivel práctico)
+
+Cuando tienes algo:
+
+✔ general
+✔ incompleto
+✔ conceptual
+
+Ejemplo:
+
+Figura
+
+Empleado
+
+Propiedad
+
+Vehículo
+
+Animal

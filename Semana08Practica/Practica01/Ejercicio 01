@@ -1,0 +1,123 @@
+⭐ EJERCICIO PROPUESTO — SISTEMA DE EMPLEADOS
+
+*************************************************************
+
+✅ 1) Construya una interfaz llamada ValoresEmpleado
+
+Debe contener las siguientes constantes:
+
+sueldoBaseAdministrativo = 1500
+
+sueldoBaseOperario = 1200
+
+bonoGerente = 800
+
+descuentoAFP = 0.10
+
+descuentoRenta = 0.08
+
+***************************************************************
+
+✅ 2) Construya una clase ABSTRACTA llamada Empleado
+
+Debe tener los atributos:
+
+codigo
+
+nombre
+
+añosServicio
+
+Debe tener:
+
+✔ Constructor
+✔ Getters y Setters
+
+Debe declarar métodos abstractos:
+
+calcularSueldoBase()
+calcularBonificacion()
+calcularDescuento()
+
+Debe tener método NORMAL:
+
+sueldoFinal = sueldoBase + bonificacion - descuento
+
+******************************************************************
+
+✅ 3) Construya la clase EmpleadoAdministrativo
+
+Atributo adicional:
+
+area (RRHH / Contabilidad / Logistica)
+
+Reglas:
+
+✔ Sueldo base → constante sueldoBaseAdministrativo
+
+✔ Bonificación:
+
+Si añosServicio > 5 → 200
+
+sino → 0
+
+✔ Descuento:
+
+AFP = 10% del sueldo base
+
+*********************************************************************
+
+✅ 4) Construya la clase EmpleadoOperario
+
+Atributo adicional:
+
+horasExtras
+
+Reglas:
+
+✔ Sueldo base → sueldoBaseOperario
+
+✔ Bonificación:
+
+horasExtras * 20
+
+✔ Descuento:
+
+Renta = 8% del sueldo base
+
+**********************************************************************
+
+✅ 5) Construya la clase EmpleadoGerente
+
+Atributo adicional:
+
+departamento
+
+Reglas:
+
+✔ Sueldo base → 2500
+
+✔ Bonificación:
+
+bonoGerente
+
+✔ Descuento:
+
+AFP + Renta
+
+************************************************************************
+
+✅ 6) Construya un MainEmpleado
+
+Debe tener menú:
+
+1 Registrar Administrativo
+2 Registrar Operario
+3 Registrar Gerente
+4 Salir
+
+Cada registro debe mostrar:
+
+⭐ Sueldo final del empleado
+
+************************************************************************

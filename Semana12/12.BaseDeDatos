@@ -1,0 +1,82 @@
+📌 JAVA DATABASE CONNECTIVITY (JDBC)
+**********************************************************************
+✅ ¿Qué es JDBC?
+
+JDBC (Java Database Connectivity) es una API de Java que permite conectar programas Java con una Base de Datos para ejecutar operaciones usando SQL.
+
+Permite:
+
+Consultar datos (SELECT)
+
+Insertar datos (INSERT)
+
+Modificar datos (UPDATE)
+
+Eliminar datos (DELETE)
+
+Crear tablas y ejecutar procedimientos
+*********************************************************************
+
+✅ Paquete java.sql
+
+Las clases más importantes para trabajar con Base de Datos son:
+
+DriverManager → Carga el driver y permite obtener la conexión.
+
+Connection → Representa la conexión activa con la base de datos.
+
+Statement → Ejecuta sentencias SQL simples.
+
+PreparedStatement → Ejecuta SQL precompilado (más seguro y eficiente).
+
+ResultSet → Guarda los resultados de una consulta SELECT.
+*********************************************************************
+
+✅ Tipos de Controladores JDBC
+
+Puente JDBC-ODBC
+
+Convierte JDBC a ODBC.
+
+Fácil de usar.
+
+Bajo rendimiento y requiere instalar ODBC.
+
+API Nativa
+
+Usa librerías propias del proveedor de la BD.
+
+Mejor rendimiento.
+
+Requiere instalar software cliente.
+
+Protocolo de Red
+
+Usa un middleware entre Java y la BD.
+
+Permite auditoría, balanceo, etc.
+
+Más complejo y costoso de mantener.
+
+Driver Java Puro
+
+Conexión directa Java → Base de Datos.
+
+Mejor rendimiento.
+
+No requiere instalar software adicional.
+
+Depende del tipo de base de datos.
+*********************************************************************
+✅ Pasos para la Conectividad JDBC
+
+Registrar el Driver.
+
+Crear la conexión con la Base de Datos.
+
+Crear la sentencia SQL.
+
+Ejecutar la consulta.
+
+Cerrar la conexión.
+*********************************************************************

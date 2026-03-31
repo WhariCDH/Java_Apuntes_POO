@@ -1,0 +1,88 @@
+INTERFACE (Semana 8)
+✅ 1. Tipos de herencia
+
+En programación existen:
+
+🔵 Herencia simple
+
+Una clase hereda de una sola clase
+
+👉 Java funciona así.
+
+class Hijo extends Padre
+🔴 Herencia múltiple
+
+Una clase hereda de varias clases
+
+👉 Java NO permite esto directamente
+👉 Pero lo reemplaza usando INTERFACES
+
+⭐ 2. ¿Qué es una Interface?
+
+Una interface es:
+
+🔥 Un contrato que dice qué debe hacer una clase
+pero NO dice cómo hacerlo.
+
+📌 Características
+
+✅ No se pueden crear objetos
+✅ Solo tiene métodos SIN código
+✅ Puede tener constantes
+✅ Una clase puede implementar VARIAS interfaces
+
+⭐ Sintaxis
+public interface Nombre {
+
+    int VALOR = 10;
+
+    void metodo1();
+
+    double metodo2();
+}
+
+👉 No hay { código }
+
+⭐ Implementar una interface
+
+La clase usa:
+
+implements
+Ejemplo
+public class MiClase implements MiInterface {
+
+    public void metodo1() {
+        // código obligatorio
+    }
+}
+
+👉 Si implementas una interface
+👉 ESTÁS OBLIGADO a programar sus métodos.
+
+⭐ Diferencia con clase abstracta (MUY IMPORTANTE)
+Clase Abstracta	Interface
+Puede tener código	NO tiene código
+Puede tener atributos normales	Solo constantes
+Se usa extends	Se usa implements
+Solo una	Puedes usar muchas
+⭐ Herencia múltiple con Interfaces
+
+🔥 Aquí está lo poderoso:
+
+class Guitarra implements Electrico, Cuerda
+
+👉 Una clase puede implementar MUCHAS interfaces.
+
+⭐ Referencia a interface (MUY EXAMEN)
+
+Esto SI se puede:
+
+Instrumento x = new Guitarra();
+
+Esto NO:
+
+Instrumento x = new Instrumento(); // ERROR
+
+Porque:
+
+⭐ Interface NO crea objetos.

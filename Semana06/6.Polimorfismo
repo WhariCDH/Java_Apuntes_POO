@@ -1,0 +1,142 @@
+Semana 5 – Polimorfismo
+
+//¿Qué es Polimorfismo?
+
+Polimorfismo significa:
+
+poli = muchas
+morfismo = formas
+
+Es decir:
+
+Un mismo método puede comportarse de diferentes maneras dependiendo del objeto que lo use.
+
+Ejemplo simple:
+
+    empleado.calcularSalario();
+
+Puede calcular distinto si el objeto es:
+
+Docente
+
+Administrativo
+
+Jefe
+
+Aunque el método se llama igual.
+
+//2️⃣ Ligadura dinámica (Dynamic Binding)
+
+Java decide qué método ejecutar en tiempo de ejecución.
+
+Cuando llamas un método:
+
+Java busca el método en la clase del objeto.
+
+Si no lo encuentra, lo busca en la superclase.
+
+Sigue subiendo en la jerarquía de herencia.
+
+Ejemplo:
+
+objeto.metodo();
+
+Java revisa:
+
+Clase actual → Padre → Abuelo → etc
+Uso de super
+
+Sirve para llamar el método de la clase padre.
+
+Ejemplo:
+
+super.calcularSalario();
+
+//3️⃣ Formas de Polimorfismo
+
+Hay dos formas principales.
+
+1. Sobrecarga de métodos (Overloading)
+2. Sobreescritura de métodos (Overriding)
+
+//4️⃣ Sobrecarga de métodos (Overloading)
+
+Sucede dentro de la misma clase.
+
+Puedes tener varios métodos con el mismo nombre, pero:
+
+Cambia el número de parámetros
+
+Cambia el tipo de parámetros
+
+Ejemplo:
+
+public void caminar() {
+    System.out.println("Estoy caminando");
+}
+
+public void caminar(String direccion) {
+    System.out.println("Estoy caminando hacia el " + direccion);
+}
+
+Uso:
+
+m.caminar();
+m.caminar("norte");
+
+El método se adapta según los parámetros.
+
+
+//5️⃣ Sobreescritura de métodos (Overriding)
+
+Sucede entre una clase padre y una clase hija.
+
+La subclase redefine un método heredado.
+
+Debe tener exactamente:
+
+mismo nombre
+
+mismo tipo de retorno
+
+mismos parámetros
+
+Ejemplo:
+
+Clase padre
+public class Empleado {
+
+    public void calcularSalario() {
+        salario = tarifa * horas;
+    }
+}
+Clase hija
+public class Jefe extends Empleado {
+
+    public void calcularSalario() {
+        super.calcularSalario();
+        salario = salario + bonificacion;
+    }
+}
+
+Aquí el método se modifica para el jefe.
+
+
+//6️⃣ Diferencia clave
+
+Tipo	Dónde ocurre	Qué cambia
+Sobrecarga	Misma clase	Parámetros
+Sobreescritura	Subclase	Implementación
+🎯 Idea clave que debes recordar
+
+Polimorfismo permite usar el mismo método para distintos objetos, pero cada uno ejecuta su propia versión.
+
+Ejemplo:
+
+Empleado e1 = new Docente();
+Empleado e2 = new Administrativo();
+
+e1.calcularSalario();
+e2.calcularSalario();
+
+Cada uno calcula de forma diferente

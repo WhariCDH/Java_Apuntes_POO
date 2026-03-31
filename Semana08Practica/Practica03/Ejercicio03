@@ -1,0 +1,95 @@
+⭐ EJERCICIO — SISTEMA DE PAGOS
+**********************************************************
+
+✅ 1) Construya una interfaz llamada ValoresPago
+
+Debe contener:
+
+comisionTarjeta = 0.05
+
+comisionYape = 0.02
+
+comisionTransferencia = 0.03
+
+impuestoGeneral = 0.18
+
+***********************************************************
+
+✅ 2) Construya una clase ABSTRACTA Pago
+
+Atributos:
+
+codigoPago
+
+monto
+
+Debe tener:
+
+✔ constructor
+✔ getters/setters
+
+Métodos abstractos:
+
+calcularComision()
+calcularImpuesto()
+
+Método NORMAL:
+
+montoFinal = monto + comision + impuesto
+
+*************************************************************
+
+✅ 3) Clase PagoTarjeta
+
+Atributo adicional:
+
+banco
+
+Reglas:
+
+✔ Comisión → 5% del monto
+
+✔ Impuesto → 18% de la comisión
+
+*************************************************************
+
+✅ 4) Clase PagoYape
+
+Atributo adicional:
+
+numeroCelular
+
+Reglas:
+
+✔ Comisión → 2% del monto
+
+✔ Impuesto → 18% de la comisión
+
+*************************************************************
+
+✅ 5) Clase PagoTransferencia
+
+Atributo adicional:
+
+cuentaDestino
+
+Reglas:
+
+✔ Comisión → 3% del monto
+
+✔ Impuesto → 18% de la comisión
+
+*************************************************************
+
+✅ 6) Construya MainPago
+
+Menú:
+
+1 Registrar Pago Tarjeta
+2 Registrar Pago Yape
+3 Registrar Transferencia
+4 Salir
+
+Debe mostrar:
+
+⭐ Monto final

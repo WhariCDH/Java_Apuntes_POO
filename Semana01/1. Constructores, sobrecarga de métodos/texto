@@ -1,0 +1,20 @@
+//La Programación Orientada a Objetos (POO) 
+
+Es un paradigma que organiza el código en clases y objetos, 
+permitiendo modelar la realidad y facilitar el desarrollo de software.
+
+*Un objeto es una instancia de una clase con atributos y métodos.
+
+*El constructor es un método especial que se usa para crear e inicializar objetos. 
+ Tiene el mismo nombre que la clase y no tiene tipo de retorno.
+
+*Existen tipos de constructores:
+
+  -Vacío: no inicializa valores. (Los	constructores  vacíos, crean un objeto  cuyos atributos no tienen  valor. La actualización  de los atributos se  realice a través de los  métodos set.)
+
+  -Por defecto: asigna valores predefinidos.
+
+  -Con parámetros: inicializa atributos con datos recibidos.
+
+La sobrecarga de métodos permite tener varios métodos con el mismo nombre, 
+pero con diferentes parámetros, mejorando la flexibilidad del código

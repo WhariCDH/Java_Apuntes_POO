@@ -1,0 +1,217 @@
+# 📌 SEMANA 10 — COLECCIONES (ARRAYLIST)
+**************************************************************************************
+## ⭐ ¿Qué son las Colecciones?
+
+Desde Java 1.2 existen clases e interfaces que permiten **guardar grupos de objetos**.
+
+Una colección es todo aquello que:
+
+* Se puede recorrer (iterar)
+* Tiene tamaño (size)
+
+La interfaz principal es:
+
+```
+Collection
+```
+
+De ella derivan otras interfaces como:
+
+```
+List
+Set
+Queue
+```
+
+---
+*************************************************************************************
+## ⭐ Interface List
+
+Representa una **lista de elementos accesibles por posición (índice)**.
+
+Permite usar:
+
+```
+get(i)
+```
+
+para acceder a cualquier elemento.
+
+---
+
+## ⭐ Clases importantes que implementan List
+
+1. **ArrayList**
+
+   * La más usada
+   * Permite recorrer fácilmente los elementos
+
+2. **LinkedList**
+
+   * Lista doblemente enlazada
+   * Tiene más métodos
+
+3. **Vector**
+
+   * Clase antigua (legacy)
+   * Es thread-safe (sincronizada)
+
+---
+********************************************************************************************
+## ⭐ ArrayList
+
+Un `ArrayList` es un **array dinámico** que permite almacenar objetos sin tamaño fijo.
+
+Se encuentra en:
+
+```
+java.util
+```
+
+Implementa la interfaz:
+
+```
+List
+```
+
+---
+**********************************************************************************************
+## ⭐ Características principales de ArrayList
+
+* Permite elementos duplicados
+* Mantiene el orden de inserción
+* Tiene acceso rápido por índice (acceso aleatorio)
+* No es sincronizado
+* ❗ No permite tipos primitivos (usar Integer, Double, etc.)
+
+---
+*********************************************************************************************
+## ⭐ Constructores
+
+ArrayList vacío:
+
+```java
+ArrayList<String> lista = new ArrayList<>();
+```
+
+ArrayList con capacidad inicial:
+
+```java
+ArrayList<String> lista = new ArrayList<>(10);
+```
+
+---
+**********************************************************************************************
+## ⭐ Métodos principales
+
+### ✔ Agregar
+
+```
+add(E e)
+add(int index, E e)
+addAll(Collection c)
+```
+
+### ✔ Obtener
+
+```
+get(int index)
+```
+
+### ✔ Eliminar
+
+```
+remove(int index)
+remove(Object o)
+clear()
+```
+
+### ✔ Buscar
+
+```
+contains(Object o)
+indexOf(Object o)
+lastIndexOf(Object o)
+```
+
+### ✔ Tamaño
+
+```
+size()
+isEmpty()
+```
+
+### ✔ Modificar
+
+```
+set(int index, E element)
+```
+
+### ✔ Ordenar
+
+```
+sort(Comparator c)
+```
+
+---
+**********************************************************************************************
+## ⭐ Otros métodos útiles
+
+```
+toArray()
+clone()
+subList()
+retainAll()
+removeIf()
+trimToSize()
+```
+
+---
+*********************************************************************************************
+## ⭐ Ejemplos básicos
+
+### Crear ArrayList
+
+```java
+ArrayList<Integer> numeros = new ArrayList<>();
+```
+
+### Agregar
+
+```java
+numeros.add(10);
+numeros.add(20);
+```
+
+### Obtener tamaño
+
+```java
+numeros.size();
+```
+
+### Verificar existencia
+
+```java
+numeros.contains(10);
+```
+
+### Eliminar
+
+```java
+numeros.remove(0);
+```
+
+---
+************************************************************************************************
+## ⭐ Idea clave del tema
+
+ArrayList permite:
+
+* Guardar muchos objetos
+* Recorrerlos
+* Buscar
+* Eliminar
+* Ordenar
+
+Es la colección más usada en Java.
+***********************************************************************************************
